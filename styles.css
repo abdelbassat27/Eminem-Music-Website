@@ -1,0 +1,201 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #121212, #1e1e1e);
+    color: #e1e1e1;
+}
+
+header {
+    background-color: #1c1c1c;
+    color: #e1e1e1;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center the links in the header */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px; /* Decrease spacing between items */
+}
+
+nav ul li a {
+    color: #e1e1e1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    color: #ff4c4c; /* Red color on hover */
+    border-bottom: 2px solid #ff4c4c;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.album-list, .artist-list, .music-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items */
+}
+
+.album-item, .artist-item, .music-item {
+    margin: 20px;
+    padding: 25px;
+    background-color: #282828;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px; /* Increase width */
+    text-align: center;
+}
+
+.album-item:hover, .artist-item:hover, .music-item:hover {
+    transform: translateY(-8px); /* Enhance the hover effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.album-item img, .artist-item img, .music-item img {
+    max-width: 120px; /* Increase image width */
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.album-item img:hover, .artist-item img:hover, .music-item img:hover {
+    transform: scale(1.1); /* Scale up image on hover */
+}
+
+.music-item {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 50px; /* Increase padding */
+    border-radius: 8px;
+}
+
+.track-cover {
+    margin-right: 25px; /* Increase space between image and text */
+    border-radius: 6px;
+    width: 100px;
+    height: 100px;
+}
+
+.music-info {
+    flex: 1;
+    text-align: left;
+}
+
+audio {
+    margin-top: 10px;
+    width: 100%; /* Ensure audio element takes full width of container */
+    max-width: 100%; /* Ensure audio element doesn't exceed container width */
+    box-sizing: border-box; /* Ensure padding or border doesn't affect full width */
+}
+
+footer {
+    background-color: #1c1c1c;
+    color: #e1e1e1;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #333;
+}
+
+/* Styles for tracks */
+.tracks {
+    display: none;
+    margin-top: 10px;
+}
+
+.tracks.show {
+    display: block;
+}
+
+.track-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.track-cover {
+    margin-right: 15px;
+    border-radius: 6px;
+    width: 80px;
+    height: 80px;
+}
+
+.search-container {
+    margin: 20px;
+    text-align: center;
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #333;
+    background-color: #282828;
+    color: #e1e1e1;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ff4c4c; /* Red color */
+    background-color: #282828;
+    border: 1px solid #ff4c4c;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #ff4c4c; /* Red background on hover */
+    color: #282828;
+}
+
+#results-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 8px;
+    background: #282828;
+}
+
+.track-cover {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.music-info {
+    text-align: left;
+}
